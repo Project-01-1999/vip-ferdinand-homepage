@@ -1,0 +1,288 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #f7f8fa;
+    color: #222;
+}
+
+.top-bar {
+    background: #1a237e;
+    color: #fff;
+    padding: 0.5rem 0;
+    text-align: right;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(26,35,126,0.07);
+    padding: 1rem 3vw;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: #1a237e;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.logo span {
+    color: #ffd600;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: #1a237e;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+.nav-links li a:hover {
+    color: #ffd600;
+}
+
+.hero {
+    background: linear-gradient(120deg, #1a237e 60%, #ffd600 100%);
+    color: #fff;
+    padding: 5rem 0 4rem 0;
+    text-align: center;
+    position: relative;
+}
+.hero-content h1 {
+    font-size: 2.8rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+}
+.hero-content h1 span {
+    color: #ffd600;
+    font-family: 'Pacifico', cursive;
+}
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+.cta-btn {
+    background: #ffd600;
+    color: #1a237e;
+    padding: 0.9rem 2.2rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(26,35,126,0.13);
+    transition: background 0.2s, color 0.2s;
+}
+.cta-btn:hover {
+    background: #fff;
+    color: #1a237e;
+    border: 2px solid #ffd600;
+}
+
+.about {
+    background: #fff;
+    padding: 3rem 0 2rem 0;
+    text-align: center;
+}
+.about h2 {
+    font-size: 2.2rem;
+    color: #1a237e;
+    margin-bottom: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.about-content {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    color: #444;
+    line-height: 1.7;
+}
+
+.highlights {
+    background: #f7f8fa;
+    padding: 3rem 0 3rem 0;
+    text-align: center;
+}
+.highlights h2 {
+    font-size: 2rem;
+    color: #1a237e;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.highlight-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+}
+.card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(26,35,126,0.09);
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.18s, box-shadow 0.18s;
+    position: relative;
+}
+.card:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 8px 32px rgba(26,35,126,0.16);
+}
+.card .icon {
+    font-size: 2.7rem;
+    margin-bottom: 1rem;
+    color: #ffd600;
+    text-shadow: 0 2px 8px rgba(26,35,126,0.08);
+}
+.card h3 {
+    color: #1a237e;
+    font-size: 1.25rem;
+    margin-bottom: 0.7rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.card p {
+    color: #444;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+footer {
+    background: #1a237e;
+    color: #fff;
+    padding: 2.5rem 0 0.5rem 0;
+    font-size: 1rem;
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto 1.5rem auto;
+}
+.footer-section h4 {
+    color: #ffd600;
+    margin-bottom: 0.7rem;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.footer-section p, .footer-section ul {
+    margin: 0;
+    color: #fff;
+    font-size: 1rem;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin-bottom: 0.4rem;
+}
+.footer-section ul li a {
+    color: #ffd600;
+    text-decoration: none;
+    transition: text-decoration 0.2s;
+}
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+.footer-bottom {
+    text-align: center;
+    color: #fff;
+    font-size: 0.95rem;
+    border-top: 1px solid #3949ab;
+    padding-top: 0.7rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 900px) {
+    .highlight-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+} 
+
+/* Modal Styles for Fresh Groceries */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+}
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%; max-width: 600px;
+  position: relative;
+  text-align: center;
+}
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px; right: 20px;
+  font-size: 28px; font-weight: bold;
+  cursor: pointer;
+}
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
+.about-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  justify-content: center;
+}
+.about-image {
+  width: 260px;
+  max-width: 40vw;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(26,35,126,0.13);
+  object-fit: cover;
+}
+@media (max-width: 700px) {
+  .about-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-image {
+    width: 90vw;
+    max-width: 320px;
+    margin-bottom: 1.2rem;
+  }
+} 

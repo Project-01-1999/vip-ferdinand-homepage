@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP Ferdinand Food Mart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <span class="contact-info">📞 (773) 287-0785 | ✉️ vipferdinandmart@gmail.com</span>
+        </div>
+        <nav class="navbar">
+            <div class="logo">VIP <span>Ferdinand</span> Food Mart</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#highlights">Highlights</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1><span>VIP Ferdinand Food Mart</span></h1>
+            <p>Your 24/7 Neighborhood Convenience Store in Chicago</p>
+            <a href="#highlights" class="cta-btn">Explore Our Services</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <div class="about-flex">
+            <img src="C:\Users\dines\Documents\Cursor_AI\Vipferdinand.png" alt="VIP Ferdinand Food Mart" class="about-image">
+            <div class="about-content">
+                <p>
+                    VIP Ferdinand Food Mart is your go-to destination for all things convenient, fresh, and essential. Proudly serving the Chicago community, we are open 24/7 to ensure you always have access to snacks, beverages, groceries, household items, and more—whenever you need them. Our mission is to provide a welcoming, safe, and extraordinary shopping experience, with friendly staff and a wide selection of products to meet your everyday needs. Step into VIP Ferdinand Food Mart and discover convenience redefined!
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="highlights" id="highlights">
+        <h2>Store Highlights</h2>
+        <div class="highlight-cards">
+            <div class="card" id="freshGroceriesCard" style="cursor:pointer;">
+                <div class="icon">🍎</div>
+                <h3>Fresh Groceries</h3>
+                <p>Wide selection of fresh produce, dairy, and pantry staples for your daily needs.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🥤</div>
+                <h3>Beverages & Snacks</h3>
+                <p>Chill out with our variety of drinks and satisfy your cravings with top snacks.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🧻</div>
+                <h3>Household Essentials</h3>
+                <p>From cleaning supplies to toiletries, we’ve got your home covered 24/7.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🚚</div>
+                <h3>Quick Delivery</h3>
+                <p>Fast and reliable delivery service right to your doorstep, anytime.</p>
+            </div>
+        </div>
+    </section>
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section contact">
+                <h4>Contact Information</h4>
+                <p>VIP Ferdinand Food Mart<br>
+                4956 W Ferdinand St,<br>
+                Chicago, IL 60644-2010<br>
+                Phone: (773) 287-0785<br>
+                Email: vipferdinandmart@gmail.com</p>
+            </div>
+            <div class="footer-section hours">
+                <h4>Our Hours</h4>
+                <p>Open 24 Hours, 7 Days a Week</p>
+            </div>
+            <div class="footer-section nav">
+                <h4>Site Navigation</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#highlights">Highlights</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 VIP Ferdinand Food Mart. All rights reserved.</p>
+        </div>
+    </footer>
+
+<!-- Modal for Fresh Groceries -->
+<div id="groceriesModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+    <img src="C:\Users\dines\Downloads\Screenshot_15-7-2025_4384_topshelfvapeavondale.com.jpeg" alt="Fresh Groceries" style="width:100%;max-width:500px;">
+    <h3>Fresh Groceries</h3>
+    <p>
+      Top Shelf Smoke Shop is more than just a place for smoke accessories—we’re your go-to convenience store for everyday essentials. From snacks and drinks to breakfast items and pantry staples, we’ve got you covered. Our shelves are stocked with your favorite products to make your shopping quick and easy. Whether you need a last-minute meal or a sweet treat, we ensure quality and variety are always available. Stop by for your groceries, and enjoy a hassle-free shopping experience, where convenience is always a priority.
+    </p>
+  </div>
+</div>
+
+<script>
+document.getElementById('freshGroceriesCard').onclick = function() {
+    document.getElementById('groceriesModal').style.display = 'block';
+};
+document.getElementById('closeModal').onclick = function() {
+    document.getElementById('groceriesModal').style.display = 'none';
+};
+window.onclick = function(event) {
+    if (event.target == document.getElementById('groceriesModal')) {
+        document.getElementById('groceriesModal').style.display = 'none';
+    }
+};
+</script>
+</body>
+</html> 
